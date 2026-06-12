@@ -1,7 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "https://stylehub-backend-yhjp.onrender.com/api" });
-
+const API = axios.create({ baseURL: "https://store-backend-1-pws2.onrender.com/api" });
 // Attach JWT token from localStorage to every request
 API.interceptors.request.use((config) => {
   const token = localStorage.getItem("stylehub_token");
